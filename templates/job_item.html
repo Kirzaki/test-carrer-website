@@ -1,0 +1,13 @@
+<div class = "lead fw-normal mt-4 mb-4 border-bottom row" style = "padding-bottom:8px">
+    <div class="col-9">
+        <h4 style = "color:rgb(180,200,180)">{{job['title']}}</h4>
+        <div class = "lead fw-normal" ><b>Location :</b> {{job['period']}}</div>
+        {%if 'location' in job%}
+            <div class = "lead fw-normal" ><b>Time :</b> {{job['location']}}</div>
+        {%endif%}
+    </div>
+
+    <div class="col-3 align-self-center text-end">
+        <button type="button" class="btn btn-outline-info">Apply</button>
+    </div>
+</div>
