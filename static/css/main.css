@@ -1,3 +1,24 @@
+:root {
+    --coul-text: #daf4f0;
+    --coul-fond: #061512;
+    --first: #8cdcd5;
+    --second: #80276f;
+    --accentue: #ca5262;
+}
+
 body {
-    background-color:#0e1115
+    background-color: var(--couleur-de-fond)
+    
+}
+
+h2 {
+    color: var(--first)
+}
+
+navbar{
+    background-color: var(--coul-fond)
+}
+
+.naviguation{
+    color: var(--coul-text)
 }

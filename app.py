@@ -1,4 +1,3 @@
-# 1:08:25
 
 from flask import Flask, render_template, send_from_directory, jsonify
 import os
@@ -45,7 +44,7 @@ SKILLS = [
     ]
 
 @app.route("/")
-def hello_world():
+def home():
     return render_template('home.html', jobs = JOBS)
 
 # Adding the page icon
