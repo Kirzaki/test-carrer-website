@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, send_from_directory, jsonify
 import os
 
@@ -60,7 +59,6 @@ def list_jobs():
 @app.route('/api/skills')
 def list_skills():
     return jsonify(SKILLS)
-
 
 
 if __name__ == "__main__" :
