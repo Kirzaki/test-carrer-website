@@ -3,23 +3,24 @@ import os
 
 app = Flask(__name__)
 
-JOBS = [
+TUTORS = [
     {
         'id': 1,
-        'title': 'Tutor',
-        'period': '2022-2024',
-        'location': 'College de Maisonneuve'
+        'title': 'Mathématiques',
+        'price': '18$/heure',
+        'location': 'À distance'
     },
     {
         'id': 2,
-        'title': 'Volunteering',
-        'period': '2024 ?',
+        'title': 'Physique',
+        'price': '18$/heure',
+        'location': 'À distance'
     },
     {
         'id': 3,
-        'title': 'Assitant sauveteur',
-        'period': '2021-2022',
-        'location': 'Saint-Leonard'
+        'title': 'Chimie',
+        'price': '19$/heure',
+        'location': 'À distance ou chez-vous'
     }
     ]
 
@@ -44,7 +45,7 @@ SKILLS = [
 
 @app.route("/")
 def home():
-    return render_template('home.html', jobs = JOBS)
+    return render_template('home.html', tutors = TUTORS)
 
 # Adding the page icon
 @app.route('/favicon.ico')
@@ -52,13 +53,9 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
         'favicon.ico')
 
-@app.route('/api/jobs')
+@app.route('/api/tutors')
 def list_jobs():
-    return jsonify(JOBS)
-
-@app.route('/api/skills')
-def list_skills():
-    return jsonify(SKILLS)
+    return jsonify(TUTORS)
 
 
 if __name__ == "__main__" :

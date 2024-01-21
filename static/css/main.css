@@ -1,11 +1,13 @@
+/*Theme*/
 :root {
-    --coul-text: #daf4f0;
-    --coul-fond: #061512;
-    --first: #8cdcd5;
-    --second: #80276f;
-    --accentue: #ca5262;
+    --coul-text: #eff0f3;
+    --coul-fond: #090a0d;
+    --first: #afb2ca;
+    --second: #3e4266;
+    --accentue: #6d73ae;
 }
 
+/* General */
 body {
     background-color: var(--coul-fond)
     
@@ -15,10 +17,69 @@ h2 {
     color: var(--first)
 }
 
-navbar{
-    background-color: var(--coul-fond)
+.navbar{
+    background-color: var(--coul-fond) 
 }
 
 .naviguation{
     color: var(--coul-text)
 }
+
+/*Applying*/
+.bouton{
+    border: 2px solid var(--first);
+    color: var(--first)
+}
+
+.bouton:hover {
+    background-color: var(--first);
+    border: 2px solid var(--first); 
+    color: var(--coul-fond)
+}
+
+.bouton:active {
+    background-color: var(--first) !important;
+    border: 2px solid var(--first) !important; 
+    color: var(--coul-fond) !important;
+    transform: translateY(4px) !important;
+}
+
+/*Footer*/
+.bas-page {
+    background-color: var(--coul-fond);
+    border: 2px solid var(--coul-fond); 
+    color: var(--coul-text)
+}
+
+/*Newsletter button*/
+.bouton1{
+    border: 2px solid var(--second);
+    color: var(--second)
+}
+
+.bouton1:hover {
+    background-color: var(--second);
+    border: 2px solid var(--second); 
+    color: var(--coul-fond)
+}
+
+.bouton1:active {
+    background-color: var(--second) !important;
+    border: 2px solid var(--second) !important; 
+    color: var(--coul-fond) !important;
+    transform: translateY(4px) !important;
+}
+
+/* Footers links*/
+ul.nav li a, ul.nav li a:visited {
+    color: var(--coul-text) !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: var(--accentue) !important;
+}
+
+ul.nav li.active a {
+    color: var(--second) !important;
+}
+

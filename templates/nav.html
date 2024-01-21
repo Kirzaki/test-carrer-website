@@ -1,15 +1,17 @@
-<nav class="navbar navbar-expand-md border-bottom row" data-bs-theme="dark" style = "padding-bottom:8px">   
+<nav class="navbar navbar-expand-md border-bottom row fixed-top" data-bs-theme="dark" style = "padding-bottom:8px background-color:#090a0d">   
     <div class="container-fluid naviguation">
-        <a class="navbar-brand" href="/">
-            <img src="/static/banner.jpg" alt="My logo" width="30" height="24">
-        </a>
+        <div class = "mx-3">
+            <a class="navbar-brand" href="/">
+                <img src="/static/logo.png" alt="My logo" width="48" height="48">
+            </a>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class=" nav-link naviguation" aria-current="page" href="/">Home</a>
+                <a class=" nav-link naviguation" aria-current="page" href="/">Accueil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link naviguation" href="#">Accomplissements</a>
@@ -30,13 +32,14 @@
                 <a class=" nav-link naviguation" aria-current="page" href="/fr">Anglais</a>
             </li>
             <li class="nav-item">
-                <a class="naviguation nav-link disabled" aria-disabled="true">My account</a>
+                <a class="naviguation nav-link disabled" aria-disabled="true">Mon compte</a>
             </li>
         </ul>
         <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="ex: math" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Chercher</button>
         </form>
         </div>
     </div>
 </nav>
+<div style = "height:56px"></div>
